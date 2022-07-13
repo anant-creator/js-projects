@@ -56,6 +56,9 @@ function setReview(rev = reviews) {
     image.src = reviews[currentItem].img;
 }
 
+setReview()
+
+
 previous.addEventListener('click', () => {
   if (currentItem == 0) {
     currentItem = 3
