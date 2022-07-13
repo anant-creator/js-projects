@@ -61,7 +61,7 @@ setReview()
 
 previous.addEventListener('click', () => {
   if (currentItem == 0) {
-    currentItem = 3
+    currentItem = reviews.length - 1
   } else {
     currentItem--;
   }
@@ -69,7 +69,7 @@ previous.addEventListener('click', () => {
 })
 
 next.addEventListener('click', () => {
-  if (currentItem == 3) {
+  if (currentItem >= reviews.length - 1) {
     currentItem = 0
   } else {
     currentItem++;
