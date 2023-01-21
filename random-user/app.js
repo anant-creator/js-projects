@@ -43,5 +43,7 @@ btns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         const type = e.currentTarget.dataset.label;
         displayUser(info, type);
+        btns.forEach((btn) => btn.classList.remove('active'));
+        btn.classList.add('active');
     });
 })
